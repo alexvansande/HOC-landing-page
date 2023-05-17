@@ -21,15 +21,16 @@ body {
 .container {
     /* Set a max-width for large screens */
     max-width: 800px;
+    width: 100%;
     /* Add some horizontal padding for smaller screens */
     padding: 0 20px;
 }
 
-.logo, .gif {
+.logo, .gif, .video {
     /* Make images responsive */
     max-width: 100%;
     height: auto;
-    margin-top: 2em;
+    margin: 2em 0 0;
 }
 
 p {
