@@ -33,6 +33,16 @@ body {
     margin: 2em 0 0;
 }
 
+.video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 40em auto 2em;
+    /* Start immediately */
+    animation-delay: 0s;
+}
+
 p {
     text-shadow: rgba(255,255,255,0.8) 0px 2px 0px;
     opacity: 80%; 
@@ -65,10 +75,6 @@ a {
 }
 
 /* Set different animation delays for each element */
-.video {
-    /* Start immediately */
-    animation-delay: 0s;
-}
 
 .content {
     /* Start after 0.5 seconds */
@@ -84,4 +90,11 @@ a {
     /* Start after 1 second */
     animation-duration: 5s;
     animation-delay: 2s;
+    padding-bottom: 10em;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
 }
