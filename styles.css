@@ -1,0 +1,85 @@
+/* 
+    Welcome dear developer, 
+    as you can see, we're keeping things super simple here. 
+    No fancy animations, no parallax scrolling, 
+    just good old simplicity. Enjoy your stay!
+*/
+
+body {
+    background-color: #ede9d6;
+    font-family: 'Libre Baskerville', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    /* Set a max-width for large screens */
+    max-width: 800px;
+    /* Add some horizontal padding for smaller screens */
+    padding: 0 20px;
+}
+
+.logo, .gif {
+    /* Make images responsive */
+    max-width: 100%;
+    height: auto;
+    margin-top: 2em;
+}
+
+p {
+    text-shadow: rgba(255,255,255,0.8) 0px 2px 0px;
+    opacity: 80%; 
+    line-height: 1.5em;
+    font-size: 125%;    
+}
+
+a {
+    color: #333;
+    font-style: italic;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+/* Define a fade-in animation */
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Apply the animation to your elements */
+.video, .content, .logo {
+    /* Start invisible */
+    opacity: 0;
+    /* Fade in over 0.5 seconds */
+    animation: fadeIn 2s;
+    /* Stay visible after the animation ends */
+    animation-fill-mode: forwards;
+}
+
+/* Set different animation delays for each element */
+.video {
+    /* Start immediately */
+    animation-delay: 0s;
+}
+
+.content {
+    /* Start after 0.5 seconds */
+    animation-delay: 1s;
+}
+
+.tagline {
+    /* Start after 1 second */
+    animation-delay: 1.5s;
+}
+
+.logo {
+    /* Start after 1 second */
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
