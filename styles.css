@@ -39,6 +39,7 @@ body {
     object-fit: cover;
     display: block;
     margin: 40em auto 2em;
+    min-height: 200px;
     /* Start immediately */
     animation-delay: 0s;
 }
