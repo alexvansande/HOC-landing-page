@@ -6,7 +6,7 @@
 */
 
 body {
-    background-color: #ede9d6;
+    background-color: #EFE9E9;
     font-family: 'Libre Baskerville', serif;
     color: #333;
     margin: 0;
@@ -41,6 +41,9 @@ body {
     display: block;
     margin: 40em auto 2em;
     min-height: 200px;
+    border: none;
+    outline: none;
+    mask: url(#mask);
     /* Start immediately */
     animation-delay: 0s;
 }
